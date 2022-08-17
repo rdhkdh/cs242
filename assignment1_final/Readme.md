@@ -1,5 +1,5 @@
 # Programming Assignment 1
-### Name: Ridhikman Kaur Dhindsa, Roll No.210101088
+### Name: Ridhiman Kaur Dhindsa, Roll No.210101088
    
 Date: 18 August 2022  
 Description: This file is a readme text for programming assignment 1.
