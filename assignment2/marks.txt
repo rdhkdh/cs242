@@ -1,0 +1,5 @@
+amit physics 80
+rahul maths 90
+shyam biology 87
+kedar english 85
+hari history 89
