@@ -6,12 +6,14 @@ print("\n     *** Josephus Problem ***       \n")
 n=input("Enter n: ") #takes string input
 n=int(n) #have to convert n to integer
 while(n>26):
-    n=input("ERROR in n value. Enter n less than 26: ")
+    n=input("Invalid input. Enter n less than 26: ")
     n=int(n)
 
 k= input("Enter k: ") 
 k=int(k) #have to convert k to integer
-
+while(k<0):
+    k=input("Invalid input. Enter k>=0: ")
+    k=int(k)
 
 
 def increment(x,amt,y):
