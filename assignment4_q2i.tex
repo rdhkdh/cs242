@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage{mathtools}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{center}
+\begin{large}
+	Hello World!\\
+\end{large}
+\end{center}
+
+\begin{enumerate}
+
+\begin{large}
+\item[1] \textbf{Getting Started}
+\end{large}\\
+\\
+\textbf{Hello World!} Today I am learning \LaTeX\ . \LaTeX\ is a great program for writing math. I can write in line math such as $a^2+b^2=c^2$. I can also equations their own space:
+\begin{equation}
+\gamma^2+\theta^2=\omega^2 \label{eq:a}
+\end{equation}
+
+"Maxwell's equations" are named for James Clark Maxwell and are as follows:
+
+\begin{flalign}
+\vec{\nabla}\cdot\vec{E}=\frac{\rho}{\epsilon_{0}}&&\text{Gauss's Law}\label{eq:b}\\
+\vec{\nabla}\cdot\vec{B}=0&&\text{Gauss's Law for Magnetism}\label{eq:c}\\
+\vec{\nabla}\times\vec{E}=-\frac{\partial \vec{B}}{\partial t}&&\text{Faraday's Law of Induction}\label{eq:d}\\
+\vec{\nabla}\times\vec{B}=\mu_{0}\left(\epsilon_{0}\frac{\partial \vec{E}}{\partial t}+\vec{J}\right)&&\text{Ampere's Circuital Law}\label{eq:e}
+\end{flalign}
+
+Equations \eqref{eq:b},\eqref{eq:c},\eqref{eq:d} and \eqref{eq:e} are some of the most important in Physics.
+
+\begin{large}
+\item[2] \textbf{What about Matrix Equations?}
+\end{large}\\
+\\
+\[
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}\\
+\end{pmatrix}
+\begin{bmatrix}
+v_{1}\\
+v_{2}\\
+\vdots \\
+v_{n}\\
+\end{bmatrix}
+=
+\begin{matrix}
+w_{1} \\
+w_{2} \\
+\vdots \\
+w_{n} \\
+\end{matrix}
+\]
+
+\end{enumerate}
+
+
+\end{document}
