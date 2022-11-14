@@ -22,3 +22,5 @@ print("Minimum number of coins to be returned = ",count)
 print()
 print("            *** End of Program ***            ")
 print()
+
+# greedy approach doesn't work as it optimizes locally
