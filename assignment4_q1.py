@@ -26,12 +26,39 @@ class Solution:
 print()
 print("       *** Coin Change Problem ***   ")
 print()
-amt=input("Enter amount: ")
-amt=int(amt)
-denominations= [1,5,10,20,25,50]
+print("Denominations available = 1,5,10,20,25,50")
+x=input("Enter monetary amount for which change has to be provided: ")
+x=int(x)    # converting string to integer
+amt=x
 
-soln1= Solution() #creating object instance of class 'Solution'
-min_no_coins= soln1.coinChange(denominations,amt)
-print("Minimum number of coins required to make this sum = ",min_no_coins)
+if amt<=475:   #using dynamic programming when x<=475
+    denominations= [1,5,10,20,25,50]
+    print()
+    soln1= Solution() #creating object instance of class 'Solution'
+    min_no_coins= soln1.coinChange(denominations,x)
+    print("Minimum number of coins required to make this sum = ",min_no_coins)
+
+
+# using greedy approach when x>475 
+
+if (x%50 != 40) :
+    count = 0  # no of coins to be returned to user
+    denom= [50,25,20,10,5,1]
+    for i in denom:
+        print((x//i)," coins of denomination ",i)
+        count += (x//i)
+        x=x%i
+else:
+    print( (x-40)//50, " coins of denomination 50" )
+    print("0 coins of denomination 25 ")
+    print("2 coins of denomination 20 ")
+    print("0 coins of denomination 10 ")
+    print("0 coins of denomination 5 ")
+    print("0 coins of denomination 1 ")
+    count= 2+ ((x-40)//50)
+
+if amt>475:
+    print("Minimum number of coins to be returned = ",count)
+
 print()
 print("       *** End of Program ***        ")
