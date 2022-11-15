@@ -11,12 +11,21 @@ x=int(x)
 
 print()
 
-count = 0  # no of coins to be returned to user
-denom= [50,25,20,10,5,1]
-for i in denom:
-    print((x//i)," coins of denomination ",i)
-    count += (x//i)
-    x=x%i
+if (x%50 != 40) :
+    count = 0  # no of coins to be returned to user
+    denom= [50,25,20,10,5,1]
+    for i in denom:
+        print((x//i)," coins of denomination ",i)
+        count += (x//i)
+        x=x%i
+else:
+    print( (x-40)//50, " coins of denomination 50" )
+    print("0 coins of denomination 25 ")
+    print("2 coins of denomination 20 ")
+    print("0 coins of denomination 10 ")
+    print("0 coins of denomination 5 ")
+    print("0 coins of denomination 1 ")
+    count= 2+ ((x-40)//50)
 
 print("Minimum number of coins to be returned = ",count)
 print()
