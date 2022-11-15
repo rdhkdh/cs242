@@ -1,20 +1,19 @@
 \documentclass[a4paper]{article}
 \usepackage{mathtools}  
 \usepackage{amsmath}
+\usepackage{chemist}
 \mathtoolsset{showonlyrefs} 
 
 \begin{document}
 
 \begin{center}
 $$ \int\int\limits_{V}\int f(x,y,z)dV=F $$
-$$ \frac{dx}{dy}=x^\prime $$
 \end{center}
-%\frac{dx}{dy}=x^\prime=$\lim_{h\to\0}$\frac{f(x+h)-f(x)}{h}\\
 
-%\begin{align}
-%\frac{dx}{dy} &= x^\prime
-%&= \lim_{h\to\0}\frac{f(x+h)-f(x)}{h}
-%\end{align}
+\begin{align}
+\frac{dx}{dy} &= x^\prime
+= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+\end{align}
 
 \begin{equation}
   |x| =
@@ -33,11 +32,52 @@ $$ m\ddot{x}+c\dot{x}+kx=F_{0}sin(2\pi ft) $$
 \begin{align}
 f(x) &= x^2+3x+5x^2+8+6x \\
 &= 6x^2+9x+8 \\
-&= x(6x+9)+8 \\
+&= x(6x+9)+8 
 \end{align}
 
 \begin{center}
-$$ X=\frac{F_{0}}{k}\frac{1}{•}$$
+$$ X = \frac{F_{0}}{k} \frac{1}{ \sqrt{ (1-r^2)^2 + (2\zeta r)^2 } } $$
 \end{center}
+
+\begin{align}
+G_{\mu \nu} &\equiv R_{\mu \nu}-\frac{1}{2} Rg_{\mu \nu}
+= \frac{8\pi G}{c^4} T_{\mu \nu}
+\end{align}
+
+\begin{chemmath}
+6CO_{2} + 6H_{2}O \rightarrow C_{6}H_{12}O_{6} + 6O_{2}
+\end{chemmath}
+
+\begin{chemmath}
+SO_{4}^{2-} + Ba^{2+} \rightarrow BaSO_{4}
+\end{chemmath}
+
+\[
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}\\
+\end{pmatrix}
+\begin{pmatrix}
+v_{1}\\
+v_{2}\\
+\vdots \\
+v_{n}\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+w_{1} \\
+w_{2} \\
+\vdots \\
+w_{n} \\
+\end{pmatrix}
+\]
+
+\begin{equation}
+\frac{\partial \textbf{u}}{\partial t} + (\textbf{u} \cdot\nabla)\textbf{u} - \nu \nabla^2 (\textbf{u}) = -\nabla \textbf{h}
+\end{equation}
+
+$$ \alpha A \beta B \gamma \Gamma \delta \Delta \pi \Pi \omega \Omega $$
 
 \end{document}
