@@ -30,5 +30,5 @@ lru_cache() helps in reducing the execution time of the function by using memoiz
 2) Then run the .tex file to obtained the rendered .pdf file.
 
 ### **Explanation:**  
-i) LaTeX syntax is used to generate the PDF provided in the question. Inline math is written using single dollar signs. The word LaTeX is written in its trademark font. The 'equation' tag is used for giving a maths eqaution separate space. The 'align' environment is used when multiple labelled eqautions need to be aligned. Eqauation references 'eqref' can be used with the equation numbers. The 'matrix' environment is used for creating a matrix.  
+i) LaTeX syntax is used to generate the PDF provided in the question. Inline math is written using single dollar signs. The word LaTeX is written in its trademark font. The 'equation' tag is used for giving a maths eqaution separate space. The 'align' environment is used when multiple labelled eqautions need to be aligned. Equation references 'eqref' can be used with the equation numbers. The 'matrix' environment is used for creating a matrix.  
 ii) 
